@@ -1,0 +1,317 @@
+/* inconsolata-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/inconsolata-v32-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/inconsolata-v32-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inconsolata-v32-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inconsolata-v32-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inconsolata-v32-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inconsolata-v32-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/inconsolata-v32-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inconsolata-v32-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inconsolata";
+  color: white;
+  background-image: url(images/background-desktop.png);
+}
+
+.ticket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  z-index: 9999;
+  position: relative;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.ticket-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.ticket-logo p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.ticket-title {
+  max-width: 890px;
+  text-align: center;
+}
+.ticket-title h1 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.ticket-title p {
+  font-size: 24px;
+  line-height: 28px;
+  color: #d1d0d5;
+  letter-spacing: -0.5px;
+  padding-top: 20px;
+  margin-bottom: 45px;
+}
+
+.body-box {
+  padding: 19px 0;
+  width: 460px;
+  border: 2px dashed #4b4869;
+  border-radius: 8px;
+  background-color: #0d082d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  color: #d1d0d5;
+  margin: 20px 0 0 0;
+  position: relative;
+  transition: 0.3s;
+}
+
+.body-box:hover {
+  border-color: #f57463;
+}
+
+.body-box p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+small {
+  font-size: 12px;
+  color: #ffffff;
+  padding: 12px 0 24px 0;
+}
+
+.body-box input[type="file"] {
+  display: none;
+}
+.body-box:hover {
+  background-color: rgb(72, 75, 105);
+}
+.upload-icon {
+  background-color: rgb(72, 75, 105);
+  border-radius: 20%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.ticket-body {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+.body-title {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.form-group input {
+  background-color: #0d082d;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(135, 132, 165, 1);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.form-group input:hover {
+  border-color: #f57463;
+  background-color: rgb(72, 75, 105);
+}
+.btn {
+  width: 100%;
+  padding: 17px 0;
+  border-radius: 10px;
+  background-color: rgba(245, 116, 99, 1);
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: rgb(233, 85, 65);
+}
+.img-a {
+  position: fixed;
+  bottom: 10px;
+}
+.img-b {
+  position: fixed;
+  right: 1px;
+  top: 100px;
+}
+.img-a-desctop {
+  display: none;
+}
+
+/* 760px  uchun */
+@media (max-width: 760px) {
+  .img-a {
+    display: none;
+  }
+
+  .img-a-desctop {
+    display: block;
+    position: fixed;
+    bottom: -100px;
+    width: 200px;
+    left: -30px;
+  }
+  .img-b {
+    top: 0;
+    right: 0;
+  }
+  .ticket-body {
+    width: 100%;
+  }
+  .ticket-title h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .ticket-title p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .body-box {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .form-group input {
+    padding: 12px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 14px 0;
+  }
+}
+/* 480px uchun  */
+@media (max-width: 480px) {
+  .ticket-logo p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .ticket-title h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .ticket-title p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .body-box {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .form-group input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  .upload-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ticket {
+    padding: 0 20px;
+  }
+
+  .img-a,
+  .img-b {
+    display: none;
+  }
+}
